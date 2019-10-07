@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Démineur 💣 !</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./index.js" type="module"></script>
+  </head>
+
+  <body>
+    <h1>Démineur</h1>
+
+    <div id="demineur">
+      <h2 v-if="demineur.test == 2">You win !</h2>
+      <h2 v-if="demineur.test == 1">You lose !</h2>
+      <h2 v-if="demineur.test == 0">La partie est en cours ...</h2>
+
+      <table onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status=''; return true;">
+        <tr v-for="(table, x) in tables">
+          <td v-for="(cell, y) in table">
+              <div class="divBtn" v-on:click="clique(x,y)" @contextmenu="cliqueD(x,y)">
+                  {{ cell }}
+              </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>

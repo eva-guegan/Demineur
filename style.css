@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: red;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: gray solid 1px;
+    margin-left: 36vw;
+    margin-top: 5vw;
+}
+
+td {
+    border: gray solid 1px;
+    width: 5vw;
+    height: 5vw;
+}
+
+.divBtn {
+    background-color: pink;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 20%;
+    margin-left: 1vw;
+    box-shadow: darkgray 2px 2px 2px;
+}
+
+button {
+    background-color: pink;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 20%;
+}
